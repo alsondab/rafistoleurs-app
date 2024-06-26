@@ -6,14 +6,25 @@
 
 ## Table des matières
 
-- [Aperçu du Projet](#aperçu-du-projet)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies Utilisées](#technologies-utilisées)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Utilisation](#utilisation)
-- [Contribuer](#contribuer)
-- [Contact](#contact)
+- [Rafistoleurs App](#rafistoleurs-app)
+  - [Table des matières](#table-des-matières)
+  - [Aperçu du Projet](#aperçu-du-projet)
+  - [Fonctionnalités](#fonctionnalités)
+  - [Technologies Utilisées](#technologies-utilisées)
+  - [Installation](#installation)
+    - [Prérequis](#prérequis)
+    - [Cloner le dépôt](#cloner-le-dépôt)
+    - [Backend Laravel](#backend-laravel)
+    - [Application Web Angular](#application-web-angular)
+    - [Application Mobile Flutter](#application-mobile-flutter)
+  - [Configuration](#configuration)
+    - [Configuration de la Base de Données](#configuration-de-la-base-de-données)
+    - [Configuration de l'API](#configuration-de-lapi)
+  - [Utilisation](#utilisation)
+    - [Application Web](#application-web)
+    - [Application Mobile](#application-mobile)
+  - [Contribuer](#contribuer)
+  - [Contact](#contact)
 
 ## Aperçu du Projet
 
@@ -152,4 +163,4 @@ Nous accueillons les contributions de la communauté ! Pour contribuer :
 
 ## Contact
 
-Pour toute question ou suggestion, veuillez nous contacter à alsondab9@gmail.com .# rafistoleurs-app
+Pour toute question ou suggestion, veuillez nous contacter à alsondab9@gmail.com .
