@@ -120,10 +120,25 @@ cd rafistoleurs-app
 
 ## Configuration
 
-### Configuration de la Base de Données
+# Configuration de la Base de Données
 
-1. Ouvrez phpMyAdmin et créez une base de données nommée `rafistoleurs_app`.
-2. Importez le fichier SQL pour créer les tables nécessaires (script SQL fourni dans la section précédente).
+ 1. Préparer XAMPP
+1. Assurez-vous que XAMPP est installé et en cours d'exécution.
+2. Démarrez Apache et MySQL depuis le panneau de contrôle XAMPP.
+3. Ouvrez phpMyAdmin en allant sur `http://localhost/phpmyadmin`.
+
+ 2. Créer la Base de Données
+1. Ouvrez phpMyAdmin.
+2. Cliquez sur l'onglet "Bases de données".
+3. Créez une nouvelle base de données nommée `rafistoleurs_app`.
+
+# Instructions pour Importer le Script SQL
+
+1. Ouvrez phpMyAdmin dans votre navigateur via `http://localhost/phpmyadmin`.
+2. Sélectionnez la base de données `rafistoleurs_app`.
+3. Cliquez sur l'onglet "Importer".
+4. Choisissez le fichier contenant le script SQL ci-dessus (vous pouvez copier le script dans un fichier `.sql`).
+5. Cliquez sur "Exécuter".
 
 ### Configuration de l'API
 
