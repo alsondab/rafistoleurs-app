@@ -45,6 +45,9 @@ Le projet est composé de trois parties principales :
 - **Base de Données** : MySQL
 - **Application Web** : Angular
 - **Application Mobile** : Flutter
+- **Concepion**: UML (StarUml)
+- **Presentation du Projet**: Canva
+- **Refferenciel**:Git
 
 ## Installation
 
