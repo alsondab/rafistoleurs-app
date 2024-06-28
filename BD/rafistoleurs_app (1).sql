@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 26 juin 2024 à 01:24
+-- Généré le : ven. 28 juin 2024 à 02:21
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -51,6 +51,7 @@ CREATE TABLE `rafistoleurs` (
   `telephone` varchar(20) NOT NULL,
   `photo` varchar(255) DEFAULT NULL,
   `localisation` varchar(255) DEFAULT NULL,
+  `disponibilite` tinyint(1) DEFAULT 1,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
