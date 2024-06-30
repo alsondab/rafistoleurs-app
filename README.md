@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -11,56 +12,187 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Rafistoleurs App
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Rafistoleurs App** est une application conçue pour aider les rafistoleurs ivoiriens (appelés localement "toclo toclo") à trouver plus de clients sans avoir à marcher sous le soleil toute la journée. Cette application aide également les clients à trouver des rafistoleurs disponibles dans leur voisinage, à prendre leurs contacts et à les appeler.
 
-## Learning Laravel
+## Table des matières
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- [Rafistoleurs App](#rafistoleurs-app)
+  - [Table des matières](#table-des-matières)
+  - [Aperçu du Projet](#aperçu-du-projet)
+  - [Fonctionnalités](#fonctionnalités)
+  - [Technologies Utilisées](#technologies-utilisées)
+  - [Installation](#installation)
+    - [Prérequis](#prérequis)
+    - [Cloner le dépôt](#cloner-le-dépôt)
+    - [Backend Laravel](#backend-laravel)
+    - [Application Web Angular](#application-web-angular)
+    - [Application Mobile Flutter](#application-mobile-flutter)
+  - [Configuration](#configuration)
+- [Configuration de la Base de Données](#configuration-de-la-base-de-données)
+- [Instructions pour Importer le Script SQL](#instructions-pour-importer-le-script-sql)
+    - [Configuration de l'API](#configuration-de-lapi)
+  - [Utilisation](#utilisation)
+    - [Application Web](#application-web)
+    - [Application Mobile](#application-mobile)
+  - [Contribuer](#contribuer)
+  - [Contact](#contact)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Aperçu du Projet
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Le projet est composé de trois parties principales :
 
-## Laravel Sponsors
+1. **Backend API** : Développé avec Laravel, gère les requêtes API et la base de données.
+2. **Application Desktop** : Développée avec Angular, permet aux utilisateurs d'accéder aux fonctionnalités via un navigateur web.
+3. **Application Mobile** : Développée avec Flutter, permet aux utilisateurs d'accéder aux fonctionnalités via leurs smartphones.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Fonctionnalités
 
-### Premium Partners
+- Inscription et connexion des utilisateurs.
+- Recherche de rafistoleurs disponibles.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Technologies Utilisées
 
-## Contributing
+- **Backend** : Laravel
+- **Base de Données** : MySQL
+- **Application Web** : Angular
+- **Application Mobile** : Flutter
+- **Concepion**: UML (StarUml)
+- **Presentation du Projet**: Canva
+- **Refferenciel**:Git
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Installation
 
-## Code of Conduct
+### Prérequis
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Assurez-vous d'avoir les outils suivants installés sur votre machine :
 
-## Security Vulnerabilities
+- XAMPP (pour Apache et MySQL)
+- Node.js et Angular CLI
+- Flutter SDK
+- Composer
+- PHP
+- Git
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Cloner le dépôt
 
-## License
+```bash
+git clone https://github.com/alsondab/rafistoleurs-app.git
+cd rafistoleurs-app
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Backend Laravel
+
+1. **Installer les dépendances :**
+   ```bash
+   cd rafistoleurs-backend
+   composer install
+   ```
+
+2. **Configurer l'environnement :**
+   Copiez le fichier `.env.example` et renommez-le en `.env`. Modifiez les configurations de la base de données.
+
+3. **Générer la clé de l'application :**
+   ```bash
+   php artisan key:generate
+   ```
+
+4. **Migrer la base de données :**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+5. **Démarrer le serveur de développement :**
+   ```bash
+   php artisan serve
+   ```
+
+### Application Web Angular
+
+1. **Installer les dépendances :**
+   ```bash
+   cd rafistoleurs-desktop
+   npm install
+   ```
+
+2. **Démarrer le serveur de développement :**
+   ```bash
+   ng serve
+   ```
+
+### Application Mobile Flutter
+
+1. **Installer les dépendances :**
+   ```bash
+   cd rafistoleurs-mobile
+   flutter pub get
+   ```
+
+2. **Lancer l'application :**
+   ```bash
+   flutter run
+   ```
+
+## Configuration
+
+# Configuration de la Base de Données
+
+ 1. Préparer XAMPP
+1. Assurez-vous que XAMPP est installé et en cours d'exécution.
+2. Démarrez Apache et MySQL depuis le panneau de contrôle XAMPP.
+3. Ouvrez phpMyAdmin en allant sur `http://localhost/phpmyadmin`.
+
+ 2. Créer la Base de Données
+1. Ouvrez phpMyAdmin.
+2. Cliquez sur l'onglet "Bases de données".
+3. Créez une nouvelle base de données nommée `rafistoleurs_app`.
+
+# Instructions pour Importer le Script SQL
+
+1. Ouvrez phpMyAdmin dans votre navigateur via `http://localhost/phpmyadmin`.
+2. Sélectionnez la base de données `rafistoleurs_app`.
+3. Cliquez sur l'onglet "Importer".
+4. Choisissez le fichier contenant le script SQL ci-dessus (vous pouvez copier le script dans un fichier `.sql`).
+5. Cliquez sur "Exécuter".
+
+### Configuration de l'API
+
+Modifiez le fichier `.env` dans le dossier `rafistoleurs-backend` pour inclure les détails de votre base de données :
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=rafistoleurs_app
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+## Utilisation
+
+### Application Web
+
+1. Ouvrez votre navigateur et accédez à `http://localhost:4200`.
+2. Inscrivez-vous ou connectez-vous pour accéder aux fonctionnalités.
+
+### Application Mobile
+
+1. Installez Flutter sur votre machine.
+2. Connectez un appareil Android ou lancez un émulateur.
+3. Exécutez `flutter run` dans le répertoire de l'application mobile.
+
+## Contribuer
+
+Nous accueillons les contributions de la communauté ! Pour contribuer :
+
+1. Forkez le projet.
+2. Créez votre branche de fonctionnalité (`git checkout -b feature/ma-fonctionnalité`).
+3. Committez vos changements (`git commit -am 'Ajout de ma fonctionnalité'`).
+4. Poussez votre branche (`git push origin feature/ma-fonctionnalité`).
+5. Créez une Pull Request.
+
+## Contact
+
+Pour toute question ou suggestion, veuillez nous contacter à alsondab9@gmail.com .
+>>>>>>> 6b734fc7bc98ad29e2bbc50c37f22bdd1fa9bf89
