@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -194,5 +193,4 @@ Nous accueillons les contributions de la communauté ! Pour contribuer :
 
 ## Contact
 
-Pour toute question ou suggestion, veuillez nous contacter à alsondab9@gmail.com .
->>>>>>> 6b734fc7bc98ad29e2bbc50c37f22bdd1fa9bf89
+Pour toute question ou suggestion, veuillez nous contacter à alsondab9@gmail.com.
