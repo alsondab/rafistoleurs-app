@@ -320,3 +320,20 @@ input {
     color: white;
     transform: scale(1.2);
 }
+
+.compo_logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 14px; 
+}
+
+.job .card {
+    border-radius: 20px;
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.filter .card {
+    border-radius: 10px;
+}
