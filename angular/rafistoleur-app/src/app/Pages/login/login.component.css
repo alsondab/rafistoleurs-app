@@ -1,12 +1,9 @@
 
-.gradient-custom {
-    background: -webkit-linear-gradient(left, #ded6d5, #228daa);
-}
 
 .card-custom {
     border-bottom-left-radius: 10% 50%;
     border-top-left-radius: 10% 50%;
-    background-color: #cbe3fb;
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
 }
 
 .input-custom {

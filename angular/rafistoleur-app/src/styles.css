@@ -6,6 +6,7 @@ scr * {
 
 body {
     font-family: "Poppins", sans-serif;
+    
 }
 
 html {
@@ -25,19 +26,17 @@ btn {
 nav,
 .nav-links {
     display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 24vh;
+    
 }
 
-.nav-links {
-    gap: 0.5rem;
-    list-style: none;
-    font-size: 1.5rem;
-}
 
 a {
     color: black;
@@ -80,9 +79,12 @@ a:hover {
 }
 
 /* Footer section */
-
 footer p {
     text-align: center;
+    height: 5vh;
+    margin-top: 10;
+    bottom: 0;
+    position: relative;
 }
 
 /* Seacrh */
@@ -93,7 +95,6 @@ footer p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 20px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -108,12 +109,12 @@ footer p {
     display: flex;
     align-items: center;
     padding: 9px 9px 9px 24px;
-    background: #fff;
-    border: 1.26923px solid #eaf1f5;
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
+    border: 1.26923px solid #e3dddd;
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgb(86 141 187 / 12%);
     border-radius: 100px;
-    border: 1px solid white;
+    border: 1px solid #e3dddd;
 }
 
 #searchIcon {
@@ -136,6 +137,7 @@ input {
     width: 208px;
     height: 38px;
     border: none;
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
 }
 
 .search {
@@ -208,17 +210,13 @@ input {
     border-radius: 2rem;
     border: rgb(163, 163, 163) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background-color: rgb(250, 250, 250);
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
     margin: 2rem auto;
     padding: 0.5rem;
 }
 
-.about-containers,
-.about-details-container {
-    display: flex;
-}
-
 .about-containers {
+    display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -230,7 +228,7 @@ input {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -280,7 +278,7 @@ input {
     /* Limite la largeur du formulaire */
     margin: auto;
     padding: 1rem;
-    background-color: #f9f9f9;
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -335,10 +333,10 @@ input {
 }
 
 .job .card {
+    margin-top: 5px;
     border-radius: 20px;
-    margin-left:  20px;
-    margin-right: 20px;
     margin-bottom: 5px;
+    background: -webkit-linear-gradient(left, #e3dddd, #e3f2fd);
 }
 
 .filter .card {

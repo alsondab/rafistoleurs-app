@@ -1,23 +1,20 @@
+<nav lass="container-fluid " id="desktop-nav">
+    <div class="logo">
+        <img src="/images/logo_tb_icon.png" class="logo1" alt="">
+    </div>
+    <ul class="nav-links">
+        <li><a href="">Acceuil</a></li>
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#contact">Contacts</a></li>
+    </ul>
 
-<header class="container-fluid ">
-    <nav id="desktop-nav">
-        <div class="logo">
-            <img src="/images/logo_tb_icon.png" class="logo1" alt="">
-        </div>
-        <ul class="nav-links">
-            <li><a href="">Acceuil</a></li>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-  
-        <form class="d-flex">
-          <button routerLink="/login" class="btn btn-outline-dark round-button mx-2" type="button">Conection</button>
-          <button routerLink="/register" class="btn btn-secondary round-button" type="button">Inscription</button>
-      </form>
-    </nav>
-  </header>
-  
-  <div class="container-fluid ">
+    <form class="d-flex">
+        <button routerLink="/login" class="btn btn-outline-dark round-button mx-2" type="button">Conection</button>
+        <button routerLink="/register" class="btn btn-secondary round-button" type="button">Inscription</button>
+    </form>
+</nav>
+
+<div class="mt-5  container-fluid ">
     <div class="header">
         <h1>Ne perdez plus de temps </h1>
         <div> trouvez le rafistoleur qu'il vous faut et laissez votre problème de couture derrière vous !</div>
@@ -27,93 +24,89 @@
             <div class="logoContainer">
                 <img src="https://static.naukimg.com/s/7/103/i/search.9ec0e1ac.svg" id="searchIcon">
                 <input type="text" placeholder="Où habitez-vous?" id="input1">
-                <input type="submit" class="search "  value="Search">
+                <input type="submit" class="search " value="Search">
             </div>
         </div>
     </div>
-  <br>
-  <br>
-  <br>
-  
-  
-  <section id="about" class="container-fluid ">
+    <br>
+    <br>
+    <br>
+</div>
+
+<section id="about" class="mb-5 pb-5 container-fluid ">
     <p class="section__text__p1">Explorer </p>
     <h1 class="title">Notre Engagement </h1>
-    <div class="experience-details-container">
-        <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">À Propos de Nous</h2>
-              <P class="text">
-                  Bienvenue sur Rafistoleurs, l'application qui révolutionne la manière dont les couturiers et les clients se rencontrent en Côte d'Ivoire. 
-                  Notre mission est de faciliter le processus de mise en relation entre les rafistoleurs – artisans talentueux spécialisés dans 
-                  la réparation et la personnalisation de vêtements – et les clients à la recherche de leurs services.
-                 </P>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Notre Vision</h2>
-                    <P class="text">
-                      Nous croyons que chaque vêtement mérite une seconde vie et chaque artisan mérite d'être reconnu pour son savoir-faire. 
-                      Notre application est conçue pour rendre la recherche de rafistoleurs plus simple et plus rapide, 
-                      tout en offrant aux couturiers une plateforme moderne pour se faire connaître et trouver de nouveaux clients. </P>
-                </div>
-  
-  
-        </div>   
+    <div class="about-containers">
+        <div class="details-container">
+            <h2 class="experience-sub-title">À Propos de Nous</h2>
+            <P class="text">
+                Bienvenue sur Rafistoleurs, l'application qui révolutionne la manière dont les couturiers et les
+                clients se rencontrent en Côte d'Ivoire.
+                Notre mission est de faciliter le processus de mise en relation entre les rafistoleurs –
+                artisans talentueux spécialisés dans
+                la réparation et la personnalisation de vêtements – et les clients à la recherche de leurs
+                services.
+            </P>
+        </div>
+        <div class="details-container">
+            <h2 class="experience-sub-title">Notre Vision</h2>
+            <P class="text">
+                Nous croyons que chaque vêtement mérite une seconde vie et chaque artisan mérite d'être reconnu
+                pour son savoir-faire.
+                Notre application est conçue pour rendre la recherche de rafistoleurs plus simple et plus
+                rapide,
+                tout en offrant aux couturiers une plateforme moderne pour se faire connaître et trouver de
+                nouveaux clients. </P>
+        </div>
+
+
     </div>
-  </section> 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  
-  <section id="contact" class="container-fluid ">
+
+</section>
+<br>
+<section id="contact" class="mt-5  mb-5 pb-5 container-fluid ">
     <p class="section__text__p1">Prendre contact</p>
     <h1 class="title">Contacter Nous</h1>
     <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="images/email.png" alt="Email icon" class="icon contact-icon email-icon">
-        <p><a href="mailto:alsondab9@gmail.com" target="_blank">Alsondab9&#64;gmail.com</a></p>
-      </div>
-      <div class="contact-info-container"><br>
-        <img src="images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-        <p><a href="https://www.linkedin.com/in/ali-dabo" target="_blank">LinkedIn</a></p>
-      </div>
-      <div class="feedback-container">
-        <h2 class="title">Donnez votre avis</h2>
-        <form action="submit_feedback.php" method="POST" class="feedback-form">
-          <div class="form-group">
-            <label for="name" class="experience-sub-titles">Nom</label>
-            <input placeholder="Entrer votre Nom" type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email" class="experience-sub-titles">Email</label>
-            <input placeholder="Entrer votre Email"  type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="feedback" class="experience-sub-titles">Votre avis</label>
-            <textarea placeholder="Donnez Votre avis"id="feedback" name="feedback" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="submit-button">Envoyer</button>
-        </form>
-      </div>
+        <div class="contact-info-container">
+            <img src="images/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:alsondab9@gmail.com" target="_blank">Alsondab9&#64;gmail.com</a></p>
+        </div>
+        <div class="contact-info-container"><br>
+            <img src="images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/ali-dabo" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="feedback-container">
+            <h2 class="title">Donnez votre avis</h2>
+            <form action="submit_feedback.php" method="POST" class="feedback-form">
+                <div class="form-group">
+                    <label for="name" class="experience-sub-titles">Nom</label>
+                    <input placeholder="Entrer votre Nom" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="experience-sub-titles">Email</label>
+                    <input placeholder="Entrer votre Email" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback" class="experience-sub-titles">Votre avis</label>
+                    <textarea placeholder="Donnez Votre avis" id="feedback" name="feedback" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+        </div>
     </div>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  
-  <footer class="container-fluid ">
+</section>
+
+
+
+<footer class="mt-5 pt-5  container-fluid ">
     <nav id="desktop-nav">
         <ul class="nav-links">
-          <li><a href="">Acceuil</a></li>
-          <li><a href="#about">A propos</a></li>
-          <li><a href="#contact">Contacts</a></li>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#contact">Contacts</a></li>
         </ul>
         <p>Copyright &#169; 2024 Ali Dabo. Tous les droits sont reserves.</p>
     </nav>
-  </footer>
+</footer>
