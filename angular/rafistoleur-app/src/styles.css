@@ -54,7 +54,7 @@ a:hover {
 
 .logo1 {
     border-radius: 50%;
-    height: 170px;
+    height: 100px;
     transition: all 300ms ease-in-out;
     display: flex;
     align-items: center;
@@ -62,7 +62,14 @@ a:hover {
     box-sizing: border-box;
     border-radius: 100px;
 }
-
+.logo2{
+    
+    transition: all 300ms ease-in-out;
+    height: 100px;
+}
+.logo2:hover {
+    transform: scale(1.2);
+}
 .logo1:hover {
     transform: scale(1.2);
 }
