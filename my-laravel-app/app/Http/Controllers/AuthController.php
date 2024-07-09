@@ -48,6 +48,7 @@ class AuthController extends Controller
             '$userData' => $userData
         ], 200);
     }
+    
     /**
      * Get the authenticated User.
      *
