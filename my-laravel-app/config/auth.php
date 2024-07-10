@@ -46,7 +46,12 @@ return [
         'api' => [
         'driver' => 'jwt',
         'provider' => 'users',
-    ],
+        ],
+
+        'rafistoleur' => [
+        'driver' => 'jwt',
+        'provider' => 'rafistoleurs',
+        ],
     ],
 
     /*
@@ -70,6 +75,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'rafistoleurs' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Rafistoleur::class,
         ],
 
         // 'users' => [

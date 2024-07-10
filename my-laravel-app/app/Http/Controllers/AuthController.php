@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Models\User;
+use App\Models\Rafistoleur; // Ajoute cette ligne pour importer le modèle Rafistoleur
 
 class AuthController extends Controller
 {
-    
-     /**
+    /**
      * Create a new AuthController instance.
      *
      * @return void
@@ -28,27 +28,58 @@ class AuthController extends Controller
     {
         $credentials = request(['email', 'password']);
 
-        if (! $token = auth()->attempt($credentials)) {
+        if (!$token = auth()->attempt($credentials)) {
             return response()->json(['error' => 'Failled ! Email or password do not match'], 401);
         }
 
         return $this->respondWithToken($token);
     }
-    public function register( Request $request) {
-        
+
+    /**
+     * Register a new user.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function register(Request $request)
+    {
         $validated = $request->validate([
-            'name' =>'required',
-            'email' =>'required|email|unique:users',
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
             'password' => 'required',
-            'password_confirmation' => 'required|same:password'
+            'password_confirmation' => 'required|same:password',
+            'tel' => 'nullable',
+            'localisation' => 'nullable',
+            'description' => 'nullable',
+            'isClients' => 'nullable|boolean', // Assure-toi que ce champ est bien géré dans la requête
         ]);
-        $userData = User::create($request->except('password_confirmation'));
+
+        $userData = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+        ]);
+
+        if (!$request->isClients) {
+            Rafistoleur::create([
+                'user_id' => $userData->id,
+                'tel' => $request->tel,
+                'localisation' => $request->localisation,
+                'description' => $request->description,
+            ]);
+        }
+
+        $token = auth()->login($userData);
+
         return response()->json([
-            'message' => 'Utilisateur creer avec succes',
-            '$userData' => $userData
+            'message' => 'Utilisateur créé avec succès',
+            'userData' => $userData,
+            'access_token' => $token,
+            'token_type' => 'bearer',
+            'expires_in' => auth()->factory()->getTTL() * 60
         ], 200);
     }
-    
+
     /**
      * Get the authenticated User.
      *
@@ -56,7 +87,6 @@ class AuthController extends Controller
      */
     public function me()
     {
-         
         return response()->json(auth()->user());
     }
 
